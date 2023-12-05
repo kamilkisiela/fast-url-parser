@@ -398,7 +398,7 @@ Url.prototype.resolveObject = function Url$resolveObject(relative) {
     return result;
 };
 
-var punycode = require("punycode");
+var punycode = require("./punycode");
 Url.prototype._hostIdna = function Url$_hostIdna(hostname) {
     // IDNA Support: Returns a punycoded representation of "domain".
     // It only converts parts of the domain name that
